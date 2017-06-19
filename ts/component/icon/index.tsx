@@ -1,14 +1,15 @@
+
 import * as React from 'react'
 
 export interface IconProps {
-  onClick: () => {}
+  // onClick: any
+  className?: string
+  onClick?: React.MouseEventHandler<any>
+  type?: string
+  style?: React.CSSProperties
 }
 
-const Icon = (props: IconProps)  => {
-
-  const classString = {
-
-  }
+const Icon = (props: IconProps): JSX.Element  => {
 
   return <i {...props} />
 }

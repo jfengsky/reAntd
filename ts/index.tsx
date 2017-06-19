@@ -1,6 +1,9 @@
 import * as React from 'react'
 import { render } from 'react-dom'
 
+import { Icon } from './component'
+import './component/style'
+
 interface IAppProps {}
 interface IAppState {}
 
@@ -9,6 +12,7 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <div>
         Hello world
+        <Icon className={'blue'} style={{color: '#fff'}} />
       </div>
     )
   }
